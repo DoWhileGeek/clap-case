@@ -2,8 +2,8 @@
 import argparse
 
 
-def convert(sentence, splitter, emoji):
-	tokens = sentence.split(splitter)
+def convert(text, seperator, emoji):
+	tokens = text.split(seperator)
 
 	joined = " {} ".format(emoji).join(tokens)
 
@@ -15,4 +15,4 @@ parser.add_argument("-e", "--emoji", default ="\U0001F44F", help="emoji to use b
 parser.add_argument("-s", "--seperator", default =" ", help="character to split the sentence with")
 args = parser.parse_args()
 
-print(convert(args.sentence, args.splitter, args.emoji))
+print(convert(args.text, args.seperator, args.emoji))
