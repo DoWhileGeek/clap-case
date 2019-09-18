@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "yargs": "^14.0.0"
+  },
+  "name": "clap-case",
+  "description": "a command line program for parsing a sentence, and intersperse an emoji, defaults to 👏",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.js --out-dir dist/",
+    "dev": "babel-node index.js",
+    "do": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoWhileGeek/clap-case.git"
+  },
+  "author": "Joeseph Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoWhileGeek/clap-case/issues"
+  },
+  "homepage": "https://github.com/DoWhileGeek/clap-case#readme"
+}
