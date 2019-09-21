@@ -6,6 +6,9 @@
   "description": "a command line program for parsing a sentence, and intersperse an emoji, defaults to 👏",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "clap": "./dist/index.js"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
